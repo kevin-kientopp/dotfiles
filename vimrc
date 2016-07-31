@@ -18,6 +18,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'Quramy/tsuquyomi'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'Shougo/vimproc.vim'
+Plugin 'mileszs/ack.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
