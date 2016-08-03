@@ -19,6 +19,8 @@ Plugin 'Quramy/tsuquyomi'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'mileszs/ack.vim'
+Plugin 'jason0x43/vim-js-indent'
+Plugin 'janko-m/vim-test'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -35,6 +37,9 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 set hidden
+set expandtab
+set shiftwidth=2
+set softtabstop=2
 
 " tsuquyomi settings
 let g:tsuquyomi_disable_quickfix = 1
@@ -49,3 +54,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
+
+" netrw settings
+let g:netrw_list_hide= '.*\.swp$'
