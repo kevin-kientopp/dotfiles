@@ -42,6 +42,7 @@ set hidden
 set expandtab
 set shiftwidth=2
 set softtabstop=2
+syntax on
 
 " tsuquyomi settings
 let g:tsuquyomi_disable_quickfix = 1
