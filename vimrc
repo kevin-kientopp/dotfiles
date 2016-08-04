@@ -21,6 +21,8 @@ Plugin 'Shougo/vimproc.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'jason0x43/vim-js-indent'
 Plugin 'janko-m/vim-test'
+Plugin 'mattn/webapi-vim'
+Plugin 'mattn/gist-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
