@@ -23,6 +23,8 @@ Plugin 'jason0x43/vim-js-indent'
 Plugin 'janko-m/vim-test'
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
+Plugin 'tpope/vim-surround'
+Plugin 'Quramy/vim-js-pretty-template' 
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -47,6 +49,7 @@ syntax on
 " tsuquyomi settings
 let g:tsuquyomi_disable_quickfix = 1
 let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
+let g:syntastic_typescript_tsc_fname = ''
 
 " Syntastic settings
 set statusline+=%#warningmsg#
@@ -57,6 +60,10 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
+
+"vim-js-pretty-template settings
+autocmd FileType typescript JsPreTmpl typescript
+autocmd FileType typescript syn clear foldBraces
 
 " netrw settings
 let g:netrw_list_hide= '.*\.swp$'
