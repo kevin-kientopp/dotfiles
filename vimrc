@@ -24,6 +24,7 @@ Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
 Plugin 'tpope/vim-surround'
 Plugin 'Quramy/vim-js-pretty-template' 
+Plugin 'airblade/vim-gitgutter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
