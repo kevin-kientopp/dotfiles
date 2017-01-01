@@ -8,6 +8,7 @@ syntax on
 set backspace=indent,eol,start
 set path+=**
 set wildmenu
+set number
 
 " typescript-vim
 let g:typescript_compiler_binary = 'tsc'
@@ -18,3 +19,4 @@ autocmd QuickFixCmdPost    l* nested lwindow
 " vim-js-pretty-template
 autocmd FileType typescript JsPreTmpl html
 autocmd FileType typescript syn clear foldBraces
+
