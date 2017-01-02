@@ -1,10 +1,10 @@
 execute pathogen#infect()
 filetype plugin indent on
+syntax enable
 set hidden
 set expandtab
 set shiftwidth=2
 set softtabstop=2
-syntax on
 set backspace=indent,eol,start
 set path+=**
 set wildmenu
