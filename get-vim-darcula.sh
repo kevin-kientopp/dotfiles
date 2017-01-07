@@ -4,7 +4,7 @@ cd
 if [ ! -d ~/darcula ]
 then
 	git clone https://github.com/blueshirts/darcula
-	if [ $? != 0 ]
+	if [ "$?" -ne 0 ]
 	then
 		exit 1
 	fi
