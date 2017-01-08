@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 
-cd
+sudo apt install vim-gnome -y
+
+if [ ! -e ~/.vimrc ]
+then
+  ln -s ~/dotfiles/vimrc ~/.vimrc
+fi
+
+cd ~
 if [ ! -d ~/darcula ]
 then
 	git clone https://github.com/blueshirts/darcula

@@ -9,10 +9,14 @@ colorscheme darcula
 
 " Use :help 'option' to see the documentation for the given option.
 
-set autoindent
 set backspace=indent,eol,start
 set complete-=i
-set smarttab
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set autoindent
+set textwidth=80
+set wrap
 
 set nrformats-=octal
 
