@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-sudo apt install exuberant-ctags -y
+sudo apt install --assume-yes exuberant-ctags
