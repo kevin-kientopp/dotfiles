@@ -17,6 +17,7 @@ set expandtab
 set autoindent
 set textwidth=80
 set wrap
+set cursorline
 
 set nrformats-=octal
 
