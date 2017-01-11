@@ -18,7 +18,7 @@ set autoindent
 set textwidth=80
 set wrap
 set cursorline
-
+set hidden
 set nrformats-=octal
 
 set ttimeout
