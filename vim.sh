@@ -2,6 +2,9 @@
 
 sudo apt install --assume-yes vim-gnome 
 
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
 if [ ! -e ~/.vimrc ]
 then
   script_dir=$(dirname $(readlink -f "${BASH_SOURCE[0]}"))
