@@ -4,7 +4,9 @@ Plug 'Quramy/vim-js-pretty-template'
 Plug 'jason0x43/vim-js-indent'
 Plug 'tmhedberg/matchit'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
+Plug 'edkolev/tmuxline.vim'
 call plug#end()
 
 set wildmenu
