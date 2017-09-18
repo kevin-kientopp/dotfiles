@@ -9,6 +9,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'edkolev/tmuxline.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-unimpaired'
+Plug 'airblade/vim-gitgutter'
+Plug 'artur-shaik/vim-javacomplete2'
 call plug#end()
 
 set wildmenu
