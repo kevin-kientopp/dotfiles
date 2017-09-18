@@ -7,6 +7,8 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'edkolev/tmuxline.vim'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-unimpaired'
 call plug#end()
 
 set wildmenu
