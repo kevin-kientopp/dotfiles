@@ -11,6 +11,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-unimpaired'
 Plug 'airblade/vim-gitgutter'
 "Plug 'artur-shaik/vim-javacomplete2'
+Plug 'tfnico/vim-gradle'
 call plug#end()
 
 set wildmenu
