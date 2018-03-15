@@ -5,22 +5,17 @@ Plug 'jason0x43/vim-js-indent'
 Plug 'tmhedberg/matchit'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'edkolev/tmuxline.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-unimpaired'
 Plug 'airblade/vim-gitgutter'
-Plug 'artur-shaik/vim-javacomplete2'
+Plug 'gnattishness/cscope_maps'
+Plug 'tfnico/vim-gradle'
+Plug 'Yggdroot/LeaderF'
 call plug#end()
 
-set wildmenu
-set ignorecase
-set smartcase
-set incsearch
-set expandtab
-set shiftwidth=2
-set softtabstop=2
-set autoread
-set autoindent
-set smartindent
-
+set expandtab shiftwidth=2 softtabstop=2 
+set ignorecase smartcase
+set hidden
