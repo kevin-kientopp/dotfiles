@@ -18,4 +18,4 @@ call plug#end()
 set expandtab shiftwidth=2 softtabstop=2 
 set ignorecase smartcase
 set hidden
-
+set tags=./tags,tags,~/code/sources/tags
