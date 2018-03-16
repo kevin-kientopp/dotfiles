@@ -7,7 +7,7 @@
 # stops stty, which blocks i-search from working
 stty stop ""
 
-alias jtags='find -type f -name "*.java" | xargs ctags'
-alias ttags='find -type f -name "*.ts" | xargs ctags'
+alias jtags='ctags `find -type f -name "*.java"`'
+alias ttags='ctags `find -type f -name "*.ts"`'
 alias jgrep='find -type f -name "*.java" | xargs grep'
 
