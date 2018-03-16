@@ -1,14 +1,13 @@
 #!/bin/bash
-
-jars=`find ~/.gradle/caches/ -type f -name "*sources*.jar"`; 
+# extracts all sources jars from ~/.gradle/caches to a sources directory
 
 sources_dir=~/code/sources
-if [ ! -d $sources_dir ]; then
-  mkdir ~/code/sources
-fi
+mkdir -p $sources_dir
 
-cd ~/code/sources && 
+jars=$(find ~/.gradle/caches/ -type f -name "*sources*.jar"); 
+
+cd $sources_dir && 
 for jar in $jars; do 
-  folder=`basename $jar .jar`; 
-  mkdir $folder && cd $folder && jar xvf $jar && cd ..; 
+  folder=$(basename "$jar" .jar); 
+  mkdir -p "$folder" && cd "$folder" && jar xvf "$jar" && cd ..; 
 done;
