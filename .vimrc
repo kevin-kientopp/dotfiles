@@ -11,24 +11,29 @@ Plug 'edkolev/tmuxline.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-unimpaired'
 Plug 'airblade/vim-gitgutter'
-Plug 'gnattishness/cscope_maps'
+" Plug 'tfnico/vim-gradle'
+" Plug 'gnattishness/cscope_maps'
 " Plug 'Yggdroot/LeaderF'
-Plug 'kien/ctrlp.vim'
 call plug#end()
 
 set expandtab shiftwidth=2 softtabstop=2
 set hidden
-" Search in tags file in current file's dir. The ';' tells it to recursively
-" search in tags files in parent dirs. Then search in sources dir.
-set tags=./tags;,~/code/sources/tags
-" Set path to current file's dir, followed by /usr/include, followed by cwd
-" (,,), followed by any subdir of cwd, followed by sources dir.
-set path=.,/usr/include,,,**,~/code/sources/**
+" Search in tags file in current file's dir. Then search in cwd tags file.
+set tags=./tags,tags
+" Set path to current file's dir, followed by cwd (,,), followed by any subdir of cwd.
+set path=.,,,,**
 
 set wildignore=*.class
 
-" Jump to last cursor position unless it's invalid or in an event handler
-autocmd BufReadPost *
-      \ if line("'\"") > 0 && line("'\"") <= line("$") |
-      \   exe "normal g`\"" |
-      \ endif
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" CUSTOM AUTOCMDS
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+augroup vimrcEx
+  " Clear all autocmds in the group
+  autocmd!
+  " Jump to last cursor position unless it's invalid or in an event handler
+  autocmd BufReadPost *
+    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+    \   exe "normal g`\"" |
+    \ endif
+augroup END
