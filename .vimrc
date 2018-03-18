@@ -12,7 +12,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-unimpaired'
 Plug 'airblade/vim-gitgutter'
 Plug 'gnattishness/cscope_maps'
-Plug 'Yggdroot/LeaderF'
+" Plug 'Yggdroot/LeaderF'
 Plug 'kien/ctrlp.vim'
 call plug#end()
 
