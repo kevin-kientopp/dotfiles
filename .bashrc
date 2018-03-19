@@ -4,10 +4,10 @@
 #     . ~/dotfiles/.bashrc
 # fi
 
-# stops stty, which blocks i-search from working
+# Changes stty stop char from ctrl-s to nothing. This frees up ctrl-s to perform i-search.
 stty stop ""
 
-# use vi keys in bash
+# Use vi keys in bash
 set -o vi
 
 alias jtags='ctags `find -type f -name "*.java"`'
