@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+cd /work/oneplatform-cloud-discovery/ && java -jar build/libs/oneplatform-cloud-discovery-*.jar

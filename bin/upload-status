@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+ACCESS_TOKEN=$(curl -X POST \
+  https://account-stage.dev.skrillws.net/apiproxy/v0.18/oauth20 \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -d 'grant_type=password&client_id=218900b6c8d973881cf4185ecf2c6aba&client_secret=6cdf41c9f669fd3e6cdf41c9&username=kevin.gbp@paysafe.com&password=P@ssw0rd' | \
+python -c "import sys, json; print json.load(sys.stdin)['access_token']")
+
+curl -v -X GET \
+  "http://apifest.stage.skrill-services.net/v0.18/me/verifications/kyc/netverify/upload-status" \
+  -H "Authorization: Bearer $ACCESS_TOKEN" \
+  -H 'cache-control: no-cache' 

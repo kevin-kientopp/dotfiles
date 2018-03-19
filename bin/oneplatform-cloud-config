@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+cd /work/oneplatform-cloud-config/ && java -jar build/libs/oneplatform-cloud-config-*.jar

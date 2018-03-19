@@ -10,7 +10,9 @@ stty stop ""
 # Use vi keys in bash
 set -o vi
 
-alias jtags='ctags `find -type f -name "*.java"`'
-alias ttags='ctags `find -type f -name "*.ts"`'
+# alias jtags='ctags `find -type f -name "*.java"`'
+alias jtags='ctags -R --language-force=Java'
+# alias ttags='ctags `find -type f -name "*.ts"`'
+alias ttags='ctags -R --language-force=typescript'
 alias jgrep='find -type f -name "*.java" | xargs grep'
 
