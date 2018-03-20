@@ -25,6 +25,7 @@ set path=.,,,,**
 
 set wildignore=*.class
 set wildmode=longest,list,full 
+set grepprg=find\ -type\ f\ -name\ '*.java'\ \\\|\ xargs\ grep\ -n\ $*
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CUSTOM AUTOCMDS
