@@ -24,6 +24,7 @@ set tags=./tags,tags,~/code/dependencies/tags
 set path=.,,,,**
 
 set wildignore=*.class
+set wildmode=longest,list,full 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CUSTOM AUTOCMDS
