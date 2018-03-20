@@ -21,7 +21,7 @@ set hidden
 " Search in tags file in current file's dir. Then search in cwd tags file. Then search in dependencies tags file.
 set tags=./tags,tags,~/code/dependencies/tags
 " Set path to current file's dir, followed by cwd (,,), followed by any subdir of cwd.
-set path=.,,,,**
+set path=.,,,,**,/work/dependencies/**
 
 set wildignore=*.class
 set wildmode=longest,list,full 

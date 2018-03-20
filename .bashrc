@@ -10,7 +10,13 @@ stty stop ""
 # Use vi keys in bash
 set -o vi
 
+# Erase duplicates in history
+export HISTCONTROL=erasedups
+# Store 10k history entries
+export HISTSIZE=10000
+# Append to the history file when exiting instead of overwriting it
+shopt -s histappend
+
 alias jtags='ctags -R --languages=java'
 alias ttags='ctags -R --languages=typescript'
-alias jgrep='find -type f -name "*.java" | xargs grep'
 
