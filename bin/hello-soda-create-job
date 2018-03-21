@@ -1,0 +1,3 @@
+#!/bin/sh
+
+curl -vv -X POST "http://localhost:8050/admin/kyc/v1/helloSoda/job" -d '{ "customerId": "458824036400", "firstName": "FirstName1521568413", "lastName": "LastName1521568413", "birthDate": "1990-01-01", "facebookToken": "EAAFZBAusLJ94BAFGeXuYtZARFvzkzvKZBUUzNzBR5x4kNmSfUVCBwzmMYy4gD60nVcSmADXVZBIZCTaEhYotNKDWYOodj2x810yV6n7oahvYanzlWluKG2gdg4RxBOU6taVlsQBSOlsImabATe9HiWyY9S5Ae18tZC6iEQxGTGj3ru6wlEZAuHpag16ltsuu6MUMRX4fc1jlYrZCo424sOZBeYezZBgkVFzJsZD", "home": { "postalCode": "K2A0Z5", "line1": "123 SOA Testing Street", "city": "London", "countryCode": "GB" }, "contact": { "email": "josephsoa20180320175333653@neteller.com", "tel": "" } }' -H "Content-type: application/json" -H "Authorization: Bearer $(issue-uaa-token | jq .access_token | tr -d \")" 
