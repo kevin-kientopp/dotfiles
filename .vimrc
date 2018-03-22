@@ -24,7 +24,6 @@ set tags=./tags,tags,~/code/dependencies/tags
 set path=.,,,,**,/work/dependencies/**
 
 set wildignore=*.class
-set wildmode=longest,list,full 
 set grepprg=find\ -type\ f\ -name\ '*.java'\ \\\|\ xargs\ grep\ -n\ $*
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

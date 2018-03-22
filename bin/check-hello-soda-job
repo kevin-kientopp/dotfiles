@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+
+curl -vv -X POST "http://zionmsa12-dev.neterra.skrill.net:8224/api/neteller/v1/kyc/helloSoda/report/check" -d '{ "jobId": "5ab003b652faff00012a38a8", "memberAccountId": "292721989" }' -H "Content-type: application/json" -H "Authorization: Bearer $(issue-uaa-token)"
