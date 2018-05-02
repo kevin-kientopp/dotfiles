@@ -16,3 +16,11 @@ for jar in $jars; do
   folder=$(basename "$jar" .jar); 
   mkdir -p "$folder" && cd "$folder" && jar xvf "$jar" && cd ..; 
 done;
+
+jars=$(find ~/.m2/repository/ -type f -name "*sources*.jar"); 
+
+cd "$out_dir" && 
+for jar in $jars; do 
+  folder=$(basename "$jar" .jar); 
+  mkdir -p "$folder" && cd "$folder" && jar xvf "$jar" && cd ..; 
+done;

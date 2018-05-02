@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+
+curl "http://zionmsa7-dev.neterra.skrill.net:8221/api/v1/jobs/$1/report"

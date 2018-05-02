@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-cd  /clientdata/runtime/apifest-skeleton/apifest
-java -Xms1024m -Xmx1024m -Dlog4j.configurationFile=/clientdata/git/skrill/apifest/apifest/src/main/resources/log4j.xml -Dproperties.file=/clientdata/git/skrill/apifest/apifest/src/main/resources/apifest.properties -Dcustom-policies.properties.file=/clientdata/git/skrill/custom-policies/src/main/resources/custom-policies.properties -jar apifest.jar
+cd  /clientdata/runtime/apifest-skeleton/apifest &&
+java -Xms1024m -Xmx1024m -Dlog4j.configurationFile=/clientdata/git/skrill/apifest/apifest/src/main/resources/log4j.xml -Dproperties.file=/clientdata/git/skrill/apifest/apifest/src/main/resources/apifest.properties -Dcustom-policies.properties.file=/clientdata/git/skrill/custom-policies/src/main/resources/custom-policies.properties -jar apifest.jar </dev/null >/var/log/skrill/apifest.log 2>&1
 

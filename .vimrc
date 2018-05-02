@@ -6,8 +6,6 @@ Plug 'tmhedberg/matchit'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
-Plug 'vim-airline/vim-airline'
-Plug 'edkolev/tmuxline.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-unimpaired'
 Plug 'airblade/vim-gitgutter'
@@ -17,14 +15,16 @@ Plug 'gnattishness/cscope_maps'
 call plug#end()
 
 set expandtab shiftwidth=2 softtabstop=2
+set hlsearch
 set hidden
 " Search in tags file in current file's dir. Then search in cwd tags file. Then search in dependencies tags file.
 set tags=./tags,tags,~/code/dependencies/tags
 " Set path to current file's dir, followed by cwd (,,), followed by any subdir of cwd.
 set path=.,,,,**,/work/dependencies/**
 
-set wildignore=*.class
-set grepprg=find\ -type\ f\ -name\ '*.java'\ \\\|\ xargs\ grep\ -n\ $*
+set wildignore=*.class,**/dist/**,**/node_modules/**
+" Remove ":" as a fname char so that gf jumps to line number.
+set isfname-=:
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CUSTOM AUTOCMDS

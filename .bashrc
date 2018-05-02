@@ -19,4 +19,6 @@ shopt -s histappend
 
 alias jtags='ctags -R --languages=java'
 alias ttags='ctags -R --languages=typescript'
+alias h='history'
+alias less='less -R'
 

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+tmux new-session -s 'skrill' -n apifest -d 
+tmux send-keys 'nginx -s quit; nginx && apifest' C-m
+tmux new-window -t skrill:1 -n oauth 
+tmux send-keys -t skrill:1 'oauth' C-m
+tmux new-window -t skrill:2 -n jboss 
+#tmux send-keys -t skrill:2 'netstat -tupln | grep 8761; RESULT=$?; while [[ "$RESULT" != "0" ]]; do netstat -tupln | grep 8761; RESULT=$?; sleep 5; done; sleep 5; oneplatform-cloud-apigateway' C-m
+tmux send-keys -t skrill:2 'netstat -tupln | grep 5656; RESULT=$?; while [[ "$RESULT" != "0" ]]; do netstat -tupln | grep 5656; RESULT=$?; sleep 5; done; create-app && jboss' C-m
+tmux attach-session -t skrill

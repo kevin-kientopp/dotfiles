@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-cd /work/oneplatform-cloud-config/ && java -jar build/libs/oneplatform-cloud-config-*.jar
+cd /work/oneplatform-cloud-config/ && java -Dspring.application.name=oneplatform-cloud-config -jar build/libs/oneplatform-cloud-config-*.jar </dev/null >/var/log/zion/oneplatform-cloud-config.log 2>&1
