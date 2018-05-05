@@ -4,6 +4,10 @@
 #     . ~/dotfiles/.bashrc
 # fi
 
+if [[ $PATH != *"$HOME/bin"* ]]; then
+  export PATH=$PATH:$HOME/bin
+fi
+
 # Changes stty stop char from ctrl-s to nothing. This frees up ctrl-s to perform i-search.
 stty stop ""
 

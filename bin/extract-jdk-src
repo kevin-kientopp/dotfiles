@@ -10,7 +10,7 @@ out_dir="$1/jdk8"
 mkdir -p "$out_dir"
 
 cd "$out_dir" 
-cp ~/.sdkman/candidates/java/8u131-zulu/src.zip .
+cp ~/.sdkman/candidates/java/current/src.zip .
 unzip src.zip
 rm src.zip 
 

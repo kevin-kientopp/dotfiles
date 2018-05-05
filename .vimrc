@@ -13,13 +13,12 @@ Plug 'gnattishness/cscope_maps'
 call plug#end()
 
 set expandtab shiftwidth=2 softtabstop=2
-set hlsearch
 set hidden
 set hlsearch
 " Search in tags file in current file's dir. Then search in cwd tags file. Then search in dependencies tags file.
 set tags=./tags,tags,~/code/dependencies/tags
 " Set path to current file's dir, followed by cwd (,,), followed by any subdir of cwd.
-set path=.,,,,**,/work/dependencies/**
+set path=.,,,,**,~/code/dependencies/**
 
 set wildignore=*.class,*/node_modules/**,*/dist/**
 
@@ -34,4 +33,6 @@ augroup vimrcEx
     \ if line("'\"") > 0 && line("'\"") <= line("$") |
     \   exe "normal g`\"" |
     \ endif
+  " Remove trailing whitespace
+  autocmd BufWritePre * :%s/\s\+$//ge
 augroup END
