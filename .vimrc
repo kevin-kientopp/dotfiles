@@ -35,4 +35,5 @@ augroup vimrcEx
     \ endif
   " Remove trailing whitespace
   autocmd BufWritePre * :%s/\s\+$//ge
+  autocmd BufReadPost /clientdata/git/skrill/platform/* shiftwidth=4 softtabstop=4
 augroup END
