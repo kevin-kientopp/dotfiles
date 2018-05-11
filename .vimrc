@@ -22,6 +22,8 @@ set path=.,,,,**,~/code/dependencies/**
 
 set wildignore=*.class,*/node_modules/**,*/dist/**
 
+nnoremap <leader>g :grep -Rw <cword> .
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CUSTOM AUTOCMDS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
