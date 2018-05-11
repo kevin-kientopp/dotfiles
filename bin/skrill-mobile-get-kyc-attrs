@@ -1,0 +1,2 @@
+#!/usr/bin/bash -x
+curl -vv "http://platform.integr.skrill-services.net/antifraud/verifications/kyc/kyc-attributes/288960470"

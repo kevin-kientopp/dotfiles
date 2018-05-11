@@ -34,6 +34,7 @@ augroup vimrcEx
     \   exe "normal g`\"" |
     \ endif
   " Remove trailing whitespace
-  autocmd BufWritePre * :%s/\s\+$//ge
-  autocmd BufReadPost /clientdata/git/skrill/platform/* set shiftwidth=4 softtabstop=4
+  " autocmd BufWritePre * :%s/\s\+$//ge
+  autocmd BufReadPost /clientdata/git/skrill/platform/* setlocal shiftwidth=4 softtabstop=4
+  autocmd FileType java nnoremap <buffer> <leader>g :grep -Rw <cword> . --include *.java
 augroup END
