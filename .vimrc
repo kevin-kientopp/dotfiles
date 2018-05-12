@@ -1,17 +1,3 @@
-call plug#begin('~/.vim/plugged')
-Plug 'leafgarland/typescript-vim'
-Plug 'Quramy/vim-js-pretty-template'
-Plug 'jason0x43/vim-js-indent'
-Plug 'tmhedberg/matchit'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-unimpaired'
-Plug 'airblade/vim-gitgutter'
-Plug 'gnattishness/cscope_maps'
-call plug#end()
-
 set expandtab shiftwidth=2 softtabstop=2
 set hidden
 set hlsearch
