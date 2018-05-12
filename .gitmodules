@@ -1,33 +1,33 @@
 [submodule "pack/start/typescript-vim"]
-	path = pack/start/typescript-vim
+	path = pack/kevin/start/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim
 [submodule "pack/start/vim-js-pretty-template"]
-	path = pack/start/vim-js-pretty-template
+	path = pack/kevin/start/vim-js-pretty-template
 	url = https://github.com/Quramy/vim-js-pretty-template
 [submodule "pack/start/vim-js-indent"]
-	path = pack/start/vim-js-indent
+	path = pack/kevin/start/vim-js-indent
 	url = https://github.com/jason0x43/vim-js-indent
 [submodule "pack/start/matchit"]
-	path = pack/start/matchit
+	path = pack/kevin/start/matchit
 	url = https://github.com/tmhedberg/matchit
 [submodule "pack/start/vim-surround"]
-	path = pack/start/vim-surround
+	path = pack/kevin/start/vim-surround
 	url = https://github.com/tpope/vim-surround
 [submodule "pack/start/vim-fugitive"]
-	path = pack/start/vim-fugitive
+	path = pack/kevin/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
 [submodule "pack/start/vim-sensible"]
-	path = pack/start/vim-sensible
+	path = pack/kevin/start/vim-sensible
 	url = https://github.com/tpope/vim-sensible
 [submodule "pack/start/vim-commentary"]
-	path = pack/start/vim-commentary
+	path = pack/kevin/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary
 [submodule "pack/start/vim-unimpaired"]
-	path = pack/start/vim-unimpaired
+	path = pack/kevin/start/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired
 [submodule "pack/start/vim-gitgutter"]
-	path = pack/start/vim-gitgutter
+	path = pack/kevin/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
 [submodule "pack/start/cscope_maps"]
-	path = pack/start/cscope_maps
+	path = pack/kevin/start/cscope_maps
 	url = https://github.com/gnattishness/cscope_maps
