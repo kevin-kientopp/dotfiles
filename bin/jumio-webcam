@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+curl -vv "http://localhost:8218/api/wac/web/kyc/v1/jumio/webcam/293740846" -d '' -H "Authorization: Bearer $(issue-uaa-token)" -H "Content-type: application/json" -H 'Accept: application/json'

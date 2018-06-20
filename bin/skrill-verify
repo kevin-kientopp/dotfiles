@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+
+curl -vv "http://zionmsa6-dev.neterra.skrill.net:8218/api/wac/web/kyc/v1/skrillJumio" -d '' --cookie "ssoSessionId=43603af5f4752ac3030f7c005493326e3c5701868f416717acf68ba2d0763f8d" -H "Authorization: Bearer $(issue-uaa-token)"
