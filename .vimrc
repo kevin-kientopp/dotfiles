@@ -2,13 +2,13 @@ set expandtab shiftwidth=2 softtabstop=2
 set hidden
 set hlsearch
 " Search in tags file in current file's dir. Then search in cwd tags file. Then search in dependencies tags file.
-set tags=./tags,tags,~/code/dependencies/tags
+set tags=./tags,tags,/work/dependencies/tags
 " Set path to current file's dir, followed by cwd (,,), followed by any subdir of cwd.
-set path=.,,,,**,~/code/dependencies/**
+set path=.,,,,**,/work/dependencies/**
 
 set wildignore=*.class,*/node_modules/**,*/dist/**
 
-nnoremap <leader>g :grep -Rw <cword> .
+nnoremap <leader>g :grep -R "<c-r>=expand("<cword>")<CR>" .
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CUSTOM AUTOCMDS
@@ -24,5 +24,5 @@ augroup vimrcEx
   " Remove trailing whitespace
   " autocmd BufWritePre * :%s/\s\+$//ge
   autocmd BufReadPost /clientdata/git/skrill/platform/* setlocal shiftwidth=4 softtabstop=4
-  autocmd FileType java nnoremap <buffer> <leader>g :grep -Rw <cword> . --include *.java
+  autocmd FileType java nnoremap <buffer> <leader>g :grep -R "<c-r>=expand("<cword>")<CR>" . --include *.java
 augroup END
