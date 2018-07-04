@@ -1,3 +1,0 @@
-#!/usr/bin/bash -x
-# curl -vv "http://platform.integr.skrill-services.net/antifraud/verifications/kyc/kyc-attributes/293254767"
-curl -vv "http://localhost:8080/antifraud/verifications/kyc/kyc-attributes/293180315?fundingRequired=false"

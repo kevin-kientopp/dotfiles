@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-for i in {1..110}
-do
-	curl -X POST -H "Content-Type: application/json" -d '{"brand": "Skrill", "accountId": "12345"}' http://localhost:8031/workqueue/v1/DocumentReview/skrill/tasks
-done
-

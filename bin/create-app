@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-cd /clientdata/runtime/apifest-skeleton
-./create_app.sh
-

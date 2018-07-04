@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-cd /work/paysafe-wallet-kyc && java -Dvault.host=vault-dev.skrill.net -Dvault.port=8200 -Dvault.scheme=https -Dvault.token.runtime=8d38a205-08a7-9775-49a6-adcf6a994952 -Ddeployment.environment.name=sfa-dev -jar build/libs/paysafe-wallet-kyc-*.jar

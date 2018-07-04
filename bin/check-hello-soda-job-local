@@ -1,3 +1,0 @@
-#!/usr/bin/bash -x
-
-curl -vv -X POST "http://localhost:8050/admin/kyc/v1/helloSoda/report/check" -d '{ "jobId": "5ac285decff47e00016bd6ca", "memberAccountId": "458824036400" }' -H "Content-type: application/json"

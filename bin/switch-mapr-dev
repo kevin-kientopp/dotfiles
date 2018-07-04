@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-sudo ln -sf /opt/mapr/conf/mapr-clusters.conf.sfadev /opt/mapr/conf/mapr-clusters.conf
-sudo ln -sf /opt/mapr/conf/ssl_keystore.sfadev /opt/mapr/conf/ssl_keystore
-sudo ln -sf /opt/mapr/conf/ssl_truststore.sfadev /opt/mapr/conf/ssl_truststore
-

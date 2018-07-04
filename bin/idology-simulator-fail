@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-curl -vv "http://simulator-integr.neterra.skrill.net:6767/v1/simulator" -d '{
-"provider" : "IDOLOGY",
-"action" : "enqueue",
-"email" : "Kevin.Kientopp.12.12.1969@skrill-idology.com",
-"responses": ["FAIL"]
-}'

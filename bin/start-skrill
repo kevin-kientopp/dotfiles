@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-nginx -s quit; nginx && apifest &
-oauth &
-until { netstat -tupln | grep 5656; } >/dev/null 2>&1; do 
-    sleep 5 
-done
-create-app && jboss >/var/log/skrill/jboss.log 2>&1 

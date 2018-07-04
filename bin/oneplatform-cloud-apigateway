@@ -1,4 +1,0 @@
-#!/usr/bin/sh
-
-cd /work/oneplatform-cloud-apigateway/ && java -Dlogging.config="classpath:logback-local.xml" -jar build/libs/oneplatform-cloud-apigateway-*.jar </dev/null >/var/log/zion/oneplatform-cloud-apigateway.log 2>&1
-

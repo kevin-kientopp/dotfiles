@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-curl -vv "http://platform.integr.skrill-services.net/antifraud/verifications/kyc/293740846" -d '{"foo": "bar"}' -H 'Content-type: application/json' -H 'Skrill-Client-Id: 218900b6c8d973881cf4185ecf2c6aba'

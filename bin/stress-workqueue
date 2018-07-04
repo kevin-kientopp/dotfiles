@@ -1,1 +1,0 @@
-while true; do curl -X POST -d '{ "queueName":"All", "searchParameters": {"Brand": "Skrill"}, "taskCategory":"CaseCreate" }' "http://zionmsa1-qa.neterra.skrill.net:8031/workqueue/v1/admin/tasks/" -H 'Content-Type: application/json'; done;

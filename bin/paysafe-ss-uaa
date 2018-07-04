@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-cd /work/paysafe-ss-uaa/ && java -Dvault.local.config=/work/paysafe-ss-uaa/src/main/resources/config.yml -Dlogging.config=classpath:logback-local.xml -jar build/libs/paysafe-ss-uaa-*.jar > /var/log/zion/paysafe-ss-uaa.log 2>&1 

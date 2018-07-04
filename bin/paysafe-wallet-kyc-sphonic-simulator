@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-cd /work/paysafe-wallet-kyc-sphonic-simulator/
-java -jar build/libs/paysafe-wallet-kyc-sphonic-simulator-0.1.0.jar

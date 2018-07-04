@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-cd /clientdata/git/skrill/platform && cp */target/*.war /clientdata/git/skrill/jboss-eap-6.4/standalone/deployments/

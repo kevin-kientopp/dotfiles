@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-/clientdata/git/skrill/jboss-eap-6.4/bin/standalone.sh
-
