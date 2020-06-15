@@ -9,10 +9,10 @@ set path=.,,,,**
 
 set wildignore=*.class
 
-nnoremap <leader>g :grep -R "<c-r>=expand("<cword>")<CR>" .
+nnoremap <leader>g :grep -rw --exclude tags --exclude '*.sw?' "<c-r>=expand("<cword>")<CR>" .
 
 " Sort paragraph.
-nnoremap <leader>s vip:sort<cr>
+nnoremap <leader>s vip:!sort -u<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CUSTOM AUTOCMDS
@@ -25,9 +25,14 @@ augroup vimrcEx
     \ if line("'\"") > 0 && line("'\"") <= line("$") |
     \   exe "normal g`\"" |
     \ endif
-  autocmd FileType java nnoremap <buffer> <leader>g :grep -R "<c-r>=expand("<cword>")<CR>" . --include '*.java'
+  autocmd FileType java nnoremap <buffer> <leader>g :grep -rw --exclude tags --exclude '*.sw?' --include '*.java' "<c-r>=expand("<cword>")<CR>" .
   autocmd FileType java setlocal shiftwidth=4 softtabstop=4
+  " Log variable
+  autocmd FileType java nnoremap <leader>l "zyiwOSystem.err.println("<c-r>z = " + <c-r>z);<esc>
+  " Only look for js tags while in js file
   autocmd FileType javascript setlocal tags=tags
+  " Log variable
+  autocmd FileType javascript nnoremap <leader>l "zyiwOconsole.log("<c-r>z =", <c-r>z);<esc>
 augroup END
 
 function! s:javaGetter() abort
