@@ -9,7 +9,7 @@ set path=.,,,,**
 
 set wildignore=*.class
 
-nnoremap <leader>g :grep -rw --exclude tags --exclude '*.sw?' "<c-r>=expand("<cword>")<CR>" .
+nnoremap <leader>g :grep -r "<c-r>=expand("<cword>")<CR>" .
 
 " Sort paragraph.
 nnoremap <leader>s vip:!sort -u<cr>
@@ -25,7 +25,7 @@ augroup vimrcEx
     \ if line("'\"") > 0 && line("'\"") <= line("$") |
     \   exe "normal g`\"" |
     \ endif
-  autocmd FileType java nnoremap <buffer> <leader>g :grep -rw --exclude tags --exclude '*.sw?' --include '*.java' "<c-r>=expand("<cword>")<CR>" .
+  autocmd FileType java nnoremap <buffer> <leader>g :grep -r --include '*.java' "<c-r>=expand("<cword>")<CR>" .
   autocmd FileType java setlocal shiftwidth=4 softtabstop=4
   " Log variable
   autocmd FileType java nnoremap <leader>l "zyiwOSystem.err.println("<c-r>z = " + <c-r>z);<esc>
@@ -33,6 +33,8 @@ augroup vimrcEx
   autocmd FileType javascript setlocal tags=tags
   " Log variable
   autocmd FileType javascript nnoremap <leader>l "zyiwOconsole.log("<c-r>z =", <c-r>z);<esc>
+  " Make gf work with .js files
+  autocmd FileType javascript setlocal suffixesadd=.js,.jsx
 augroup END
 
 function! s:javaGetter() abort
