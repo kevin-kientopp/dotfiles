@@ -9,10 +9,30 @@ set path=.,,,,**
 
 set wildignore=*.class
 
-nnoremap <leader>g :grep -r "<c-r>=expand("<cword>")<CR>" .
+" nnoremap <leader>g :grep -R "<c-r>=expand("<cword>")<CR>" .
+
+nnoremap <leader>g :set operatorfunc=<SID>GrepOperator<cr>g@
+vnoremap <leader>g :<c-u>call <SID>GrepOperator(visualmode())<cr>
+
+function! s:GrepOperator(type)
+    let saved_unnamed_register = @@
+
+    if a:type ==# 'v'
+        normal! `<v`>y
+    elseif a:type ==# 'char'
+        normal! `[v`]y
+    else
+        return
+    endif
+
+    execute "normal :grep! -R " . shellescape(@@) . " ."
+    copen
+
+    let @@ = saved_unnamed_register
+endfunction
 
 " Sort paragraph.
-nnoremap <leader>s vip:!sort -u<cr>
+nnoremap <leader>s vip:sort u<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CUSTOM AUTOCMDS
