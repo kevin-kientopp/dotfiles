@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/Users/kevko/code/spring-guides/testing-web'
+let g:netrw_dirhist_7='/Users/kevko/code/spring-guides/tut-spring-security-and-angular-js/spring-session/ui/node_modules/@schematics/angular/application'
+let g:netrw_dirhist_6='/Users/kevko/dotfiles/.vim/ftplugin'
+let g:netrw_dirhist_5='/Users/kevko/dotfiles/.vim'
+let g:netrw_dirhist_4='/Users/kevko/dotfiles'
+let g:netrw_dirhist_3='/Users/kevko/dotfiles/.vim/ftplugin'
+let g:netrw_dirhist_2='/Users/kevko/dotfiles/.vim'
+let g:netrw_dirhist_1='/Users/kevko/dotfiles'
