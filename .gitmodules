@@ -1,3 +1,15 @@
 [submodule ".vim/pack/kevin/start/vim-gitgutter"]
 	path = .vim/pack/kevin/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
+[submodule ".vim/pack/kevin/start/vim-java-unused-imports"]
+	path = .vim/pack/kevin/start/vim-java-unused-imports
+	url = https://github.com/akhaku/vim-java-unused-imports
+[submodule ".vim/pack/kevin/start/vim-sensible"]
+	path = .vim/pack/kevin/start/vim-sensible
+	url = https://github.com/tpope/vim-sensible
+[submodule ".vim/pack/kevin/start/vim-commentary"]
+	path = .vim/pack/kevin/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary
+[submodule ".vim/pack/kevin/start/vim-jsx-pretty"]
+	path = .vim/pack/kevin/start/vim-jsx-pretty
+	url = https://github.com/MaxMEllon/vim-jsx-pretty
