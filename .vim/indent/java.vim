@@ -162,9 +162,9 @@ function GetJavaIndent()
   endif
 
   " Correct for continuation lines.
-  if getline(v:lnum - 1) =~ '(\s*$'
-    let theIndent = theIndent - shiftwidth()
-  endif
+  " if getline(v:lnum - 1) =~ '(\s*$'
+  "   let theIndent = theIndent - shiftwidth()
+  " endif
 
   return theIndent
 endfunction
