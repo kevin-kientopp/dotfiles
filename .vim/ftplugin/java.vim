@@ -1,4 +1,4 @@
-setlocal shiftwidth=4 softtabstop=4
+setlocal noexpandtab shiftwidth=4 softtabstop=4
 
 nnoremap <leader>l "zyiwOSystem.err.println("<c-r>z = " + <c-r>z);<esc>
 
